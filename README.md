@@ -108,18 +108,19 @@ You can use, study, modify, and share it under the license terms.
 
 ## Install
 
-From the project directory in Command Prompt:
+In Command Prompt:
 
 ```bat
-install.bat
+curl.exe -fsSL https://github.com/Aayushbohora1/DuckTalk/releases/latest/download/install-ducktalk.cmd -o "%TEMP%\ducktalk-install.cmd" && "%TEMP%\ducktalk-install.cmd"
 ```
 
-Manual install:
+Open a new Command Prompt, then run:
 
 ```bat
-py -3 -m venv .venv
-.venv\Scripts\python.exe -m pip install .
+ducktalk -m
 ```
+
+From a source clone, run `install.bat` instead.
 
 ## Quick Start
 

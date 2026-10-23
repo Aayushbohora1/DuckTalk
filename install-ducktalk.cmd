@@ -1,17 +1,10 @@
 @echo off
 setlocal EnableExtensions
-set "DEFAULT_URL=https://YOUR-HOST.example/ducktalk-1.0.0-py3-none-any.whl"
+set "DEFAULT_URL=https://github.com/Aayushbohora1/DuckTalk/releases/download/v1.0.0/ducktalk-1.0.0-py3-none-any.whl"
 set "WHEEL_URL=%~1"
 if not defined WHEEL_URL set "WHEEL_URL=%DUCKTALK_WHEEL_URL%"
 if not defined WHEEL_URL set "WHEEL_URL=%DEFAULT_URL%"
 
-if /I "%WHEEL_URL%"=="%DEFAULT_URL%" (
-    echo Usage:
-    echo   install-ducktalk.cmd https://your-host/ducktalk-1.0.0-py3-none-any.whl
-    echo.
-    echo Or set DUCKTALK_WHEEL_URL, or edit DEFAULT_URL in this file.
-    exit /b 1
-)
 
 set "PY_CMD="
 py -3 -c "import sys; raise SystemExit(0 if sys.version_info >= (3, 10) else 1)" >nul 2>nul
