@@ -4,6 +4,24 @@ DuckTalk is an open-source, direct peer-to-peer, end-to-end encrypted chat
 application for two people. It runs in Windows Command Prompt, needs no
 account, uses no relay or central message server, and stores no chat history.
 
+## Install
+
+Open Command Prompt and run:
+
+```bat
+curl.exe -fsSL https://github.com/Aayushbohora1/DuckTalk/releases/latest/download/install-ducktalk.cmd -o "%TEMP%\ducktalk-install.cmd" && "%TEMP%\ducktalk-install.cmd"
+```
+
+Then open a **new** Command Prompt and run:
+
+```bat
+ducktalk -m
+```
+
+The installer is served from GitHub Releases' global CDN, so it works from
+any network that can reach GitHub. It requires Windows 10/11 and Python
+3.10+. Installation needs no local server or port forwarding.
+
 ## Open Source
 
 DuckTalk is an open-source project released under the [MIT License](LICENSE).
@@ -105,22 +123,6 @@ You can use, study, modify, and share it under the license terms.
 - Python 3.10 or newer
 - A network path that permits direct UDP and/or TCP
 - Optional but recommended: working IPv6 on both peers
-
-## Install
-
-In Command Prompt:
-
-```bat
-curl.exe -fsSL https://github.com/Aayushbohora1/DuckTalk/releases/latest/download/install-ducktalk.cmd -o "%TEMP%\ducktalk-install.cmd" && "%TEMP%\ducktalk-install.cmd"
-```
-
-Open a new Command Prompt, then run:
-
-```bat
-ducktalk -m
-```
-
-From a source clone, run `install.bat` instead.
 
 ## Quick Start
 
