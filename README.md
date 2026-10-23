@@ -1,8 +1,22 @@
 # DuckTalk
 
-DuckTalk is a direct peer-to-peer, end-to-end encrypted chat application for
-two people. It runs in Windows Command Prompt, needs no account, uses no relay
-or central message server, and stores no chat history.
+DuckTalk is an open-source, direct peer-to-peer, end-to-end encrypted chat
+application for two people. It runs in Windows Command Prompt, needs no
+account, uses no relay or central message server, and stores no chat history.
+
+## Open Source
+
+DuckTalk is an open-source project released under the [MIT License](LICENSE).
+You can use, study, modify, and share it under the license terms.
+
+- The complete application source is included in this repository.
+- No telemetry, analytics, accounts, or hosted chat service are required.
+- Bug reports, feature ideas, documentation fixes, and pull requests are
+  welcome.
+- Run the test suite before opening a pull request:
+  `.venv\Scripts\python.exe -m pytest`.
+- Do not post join codes, public IP addresses, or private chat contents in
+  issues or pull requests.
 
 ## What This Project Provides
 
@@ -200,3 +214,18 @@ clear everything and close the session.
 - [Design](docs/DESIGN.md)
 - [Limitations](docs/LIMITATIONS.md)
 - [Network tests](docs/NETWORK_TESTS.md)
+
+## Contributing
+
+1. Fork the repository.
+2. Create a focused branch.
+3. Make the change and add or update tests.
+4. Run `ruff check .` and the full test suite.
+5. Open a pull request explaining what changed and why.
+
+For security-sensitive reports, avoid posting exploitable details or live
+credentials publicly.
+
+## License
+
+DuckTalk is released under the MIT License. See [LICENSE](LICENSE).
